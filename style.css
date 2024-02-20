@@ -424,6 +424,7 @@ a {
     font-size: 30px;
     font-weight: 700;
     text-align: center;
+    width: 60%;
 }
 
 .sectionTitle img {
@@ -638,7 +639,7 @@ a {
 }
 
 .active span {
-    color: #215679;
+    color: #215679 !important;
 }
 
 .tab:hover {
