@@ -16,6 +16,9 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 </head>
 
 <body>
@@ -26,7 +29,7 @@
                 <div class="navLogoWrapper">
                     <div class="navLogo">
                         <a href="index.html">
-                            <img src="./Images/Logo.png" class="logo" alt="">
+                            <img src="./Images/Logo.svg" class="logo" alt="">
                         </a>
 
                     </div>
@@ -219,64 +222,67 @@
                 <div class="col-12">
                     <div class="sectionTitle">
                         <span>Explore Our Top Features</span>
-                        <img src="./Images/titleLine.png" alt="">
+
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="row cardWrapper">
                         <div class="col-sm-12 col-md-6 col-lg-4">
                             <div class="card">
-                                <div><img src="./icons/Attendance.png" alt=""></div>
+                                <div><img src="./icons/Attendance.svg" alt=""></div>
                                 <div><span>Attendance</span></div>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-4">
                             <div class="card">
-                                <div><img src="./icons/Announcement.png" alt=""></div>
+                                <div><img src="./icons/Announcement.svg" alt=""></div>
                                 <div><span>Announcement Module</span></div>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-4">
                             <div class="card">
-                                <div><img src="./icons/exam.png" alt=""></div>
+                                <div><img src="./icons/exam.svg" alt=""></div>
                                 <div><span>Exam Module</span></div>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-4">
                             <div class="card">
-                                <div><img src="./icons/lessons & topic.png" alt=""></div>
+                                <div><img src="./icons/lessons & topic.svg" alt=""></div>
                                 <div><span>Lesson &n Topic </span></div>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-4">
                             <div class="card">
-                                <div><img src="./icons/assignment.png" alt=""></div>
+                                <div><img src="./icons/assignment.svg" alt=""></div>
                                 <div><span>Assignment Module</span></div>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-4">
                             <div class="card">
-                                <div><img src="./icons/holiday.png" alt=""></div>
+                                <div><img src="./icons/holiday.svg" alt=""></div>
                                 <div><span>Holiday Module</span></div>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-4">
                             <div class="card">
-                                <div><img src="./icons/Fees.png" alt=""></div>
+                                <div><img src="./icons/Fees.svg" alt=""></div>
                                 <div><span>Fees Module</span></div>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-4">
                             <div class="card">
-                                <div><img src="./icons/Timetable.png" alt=""></div>
+                                <div><img src="./icons/Timetable.svg" alt=""></div>
                                 <div><span>Timetable Management</span></div>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-4">
                             <div class="card">
-                                <div><img src="./icons/result.png" alt=""></div>
+                                <div><img src="./icons/result.svg" alt=""></div>
                                 <div><span>Result Module</span></div>
                             </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="commonBtn">View More Features</button>
                         </div>
                     </div>
                 </div>
@@ -339,25 +345,25 @@
                 <div class="row counterBG">
                     <div class="col-6 col-sm-6 col-md-3 col-lg-3">
                         <div class="card">
-                            <div><span class="numb">10+</span></div>
+                            <div><span class="numb" data-target="10">0</span><span>+</span></div>
                             <div><span class="text">Schools</span></div>
                         </div>
                     </div>
                     <div class="col-6 col-sm-6 col-md-3 col-lg-3">
                         <div class="card">
-                            <div><span class="numb">50+</span></div>
+                            <div><span class="numb" data-target="50">0</span><span>+</span></div>
                             <div><span class="text">Teachers</span></div>
                         </div>
                     </div>
                     <div class="col-6 col-sm-6 col-md-3 col-lg-3">
                         <div class="card">
-                            <div><span class="numb">1000+</span></div>
+                            <div><span class="numb" data-target="1000">0</span><span>+</span></div>
                             <div><span class="text">Students</span></div>
                         </div>
                     </div>
                     <div class="col-6 col-sm-6 col-md-3 col-lg-3">
                         <div class="card">
-                            <div><span class="numb">200+</span></div>
+                            <div><span class="numb" data-target="200">0</span><span>+</span></div>
                             <div><span class="text">Teachers</span></div>
                         </div>
                     </div>
@@ -372,43 +378,51 @@
                         <span class="greenText">Teacher Management Features</span>
                         <span>Efficiently manage teachers' assignments, schedules, and evaluations with our
                             comprehensive solutions.</span>
-                        <img src="./Images/titleLine.png" alt="">
+
                     </div>
                 </div>
                 <div class="col-12 tabsContainer">
                     <div class="row">
-                        <div class="col-lg-6 tabsWrapper">
-                            <div class="tabs">
-                                <div class="tab tab-1 active">
-                                    <span>Manage lesson & Topics</span>
-                                    <span>Efficiently organize and oversee lesson plans and topics, ensuring a
-                                        structured and engaging learning experience for student
-                                    </span>
-                                </div>
-                                <div class="tab tab-2">
-                                    <span>Manage assignments & submissions</span>
-                                    <span>Effectively track and oversee student assignments and submissions, ensuring
-                                        timely completion and assessment for optimal learning outcomes
-                                    </span>
-                                </div>
-                                <div class="tab tab-3">
-                                    <span>Manage online exams</span>
-                                    <span>Efficiently administer and monitor online exams, ensuring seamless execution,
-                                        secure assessments, and accurate grading for a streamlined examination process.
-                                    </span>
-                                </div>
-                                <div class="tab tab-4">
-                                    <span>Record Attendance and Upload Exam Marks</span>
-                                    <span>Efficiently track student attendance and seamlessly upload exam marks with our
-                                        user-friendly management tools.
-                                    </span>
-                                </div>
-                                <div class="tab tab-5">
-                                    <span>Apply leave & Payroll slips</span>
-                                    <span>Streamline leave requests and access payroll information effortlessly with our
-                                        intuitive platform designed specifically for teachers.</span>
+                        <div class="col-lg-6 tabsMainWrapper">
+                            <div class="tabsWrapper">
+                                <div class="tabs">
+                                    <div class="tab tab-1 active">
+                                        <span>Manage lesson & Topics</span>
+                                        <span>Efficiently organize and oversee lesson plans and topics, ensuring a
+                                            structured and engaging learning experience for student
+                                        </span>
+                                    </div>
+                                    <div class="tab tab-2">
+                                        <span>Manage assignments & submissions</span>
+                                        <span>Effectively track and oversee student assignments and submissions,
+                                            ensuring
+                                            timely completion and assessment for optimal learning outcomes
+                                        </span>
+                                    </div>
+                                    <div class="tab tab-3">
+                                        <span>Manage online exams</span>
+                                        <span>Efficiently administer and monitor online exams, ensuring seamless
+                                            execution,
+                                            secure assessments, and accurate grading for a streamlined examination
+                                            process.
+                                        </span>
+                                    </div>
+                                    <div class="tab tab-4">
+                                        <span>Record Attendance and Upload Exam Marks</span>
+                                        <span>Efficiently track student attendance and seamlessly upload exam marks with
+                                            our
+                                            user-friendly management tools.
+                                        </span>
+                                    </div>
+                                    <div class="tab tab-5">
+                                        <span>Apply leave & Payroll slips</span>
+                                        <span>Streamline leave requests and access payroll information effortlessly with
+                                            our
+                                            intuitive platform designed specifically for teachers.</span>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
 
                         <div class="col-lg-6 contentWrapper">
@@ -445,7 +459,7 @@
                             <span class="greenText">Super Admin Features</span>
                             <span>Enhance admissions for a superior experience
                             </span>
-                            <img src="./Images/titleLine.png" alt="">
+
                         </div>
                     </div>
                     <div class="col-12 tabsContainer">
@@ -470,43 +484,48 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-6 tabsWrapper">
-                                <div class="tabs">
-                                    <div class="tab admissTab tab-1 admissActive">
-                                        <span>Manage schools</span>
-                                        <span>
-                                            Automate student attendance tracking for efficiency. Centralise and organise
-                                            applicant documents for easy access
-                                        </span>
-                                    </div>
-                                    <div class="tab tab-2">
-                                        <span>Manage package & add-ons</span>
-                                        <span>
-                                            Optimize school operations with streamlined communication
-                                        </span>
-                                    </div>
-                                    <div class="tab tab-3">
-                                        <span>Manage subscription</span>
-                                        <span>
-                                            Effortlessly track and manage application fees for a transparent financial
-                                            process
-                                        </span>
-                                    </div>
-                                    <div class="tab tab-4">
-                                        <span>Receive cash / cheque payment</span>
-                                        <span>
-                                            Ensure document verification accuracy and security for smooth admission
-                                            processes.
-                                        </span>
-                                    </div>
-                                    <div class="tab tab-5">
-                                        <span>Customize landing page</span>
-                                        <span>
-                                            Ensure document verification accuracy and security for smooth admission
-                                            processes.
-                                        </span>
+                            <div class="col-lg-6 tabsMainWrapper">
+                                <div class="tabsWrapper">
+                                    <div class="tabs">
+                                        <div class="tab admissTab tab-1 admissActive">
+                                            <span>Manage schools</span>
+                                            <span>
+                                                Automate student attendance tracking for efficiency. Centralise and
+                                                organise
+                                                applicant documents for easy access
+                                            </span>
+                                        </div>
+                                        <div class="tab tab-2">
+                                            <span>Manage package & add-ons</span>
+                                            <span>
+                                                Optimize school operations with streamlined communication
+                                            </span>
+                                        </div>
+                                        <div class="tab tab-3">
+                                            <span>Manage subscription</span>
+                                            <span>
+                                                Effortlessly track and manage application fees for a transparent
+                                                financial
+                                                process
+                                            </span>
+                                        </div>
+                                        <div class="tab tab-4">
+                                            <span>Receive cash / cheque payment</span>
+                                            <span>
+                                                Ensure document verification accuracy and security for smooth admission
+                                                processes.
+                                            </span>
+                                        </div>
+                                        <div class="tab tab-5">
+                                            <span>Customize landing page</span>
+                                            <span>
+                                                Ensure document verification accuracy and security for smooth admission
+                                                processes.
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -524,47 +543,52 @@
                         <span>
                             Efficiently manage staff assignments, schedules, and
                             evaluations with our comprehensive solutions.</span>
-                        <img src="./Images/titleLine.png" alt="">
+
                     </div>
                 </div>
                 <div class="col-12 tabsContainer">
                     <div class="row">
-                        <div class="col-lg-6 tabsWrapper">
-                            <div class="tabs">
-                                <div class="tab tab-1 active">
-                                    <span>Student Management</span>
-                                    <span>
-                                        Make staff leave tracking simple. Streamline requests for efficient workforce
-                                        planning.
-                                    </span>
-                                </div>
-                                <div class="tab tab-2">
-                                    <span>Teacher Management</span>
-                                    <span>
-                                        Easily manage salaries and deductions for accurate and timely compensation.
-                                    </span>
-                                </div>
-                                <div class="tab tab-3">
-                                    <span>Timetable Management</span>
-                                    <span>
-                                        Craft, tweak, and orchestrate classes effortlessly for an academic journey
-                                        without boundaries.
-                                    </span>
-                                </div>
-                                <div class="tab tab-4">
-                                    <span>Holiday Managements</span>
-                                    <span>
-                                        Take charge of your curriculum using our Subjects Management feature.
-                                        Effortlessly add, update, and organize subjects.
-                                    </span>
-                                </div>
-                                <div class="tab tab-5">
-                                    <span>Staff Management</span>
-                                    <span>
-                                        Take charge of your curriculum using our Subjects Management feature. Effortlessly add, update, and organize subjects.
-                                    </span>
+                        <div class="col-lg-6 tabsMainWrapper">
+                            <div class="tabsWrapper">
+                                <div class="tabs">
+                                    <div class="tab tab-1 active">
+                                        <span>Student Management</span>
+                                        <span>
+                                            Make staff leave tracking simple. Streamline requests for efficient
+                                            workforce
+                                            planning.
+                                        </span>
+                                    </div>
+                                    <div class="tab tab-2">
+                                        <span>Teacher Management</span>
+                                        <span>
+                                            Easily manage salaries and deductions for accurate and timely compensation.
+                                        </span>
+                                    </div>
+                                    <div class="tab tab-3">
+                                        <span>Timetable Management</span>
+                                        <span>
+                                            Craft, tweak, and orchestrate classes effortlessly for an academic journey
+                                            without boundaries.
+                                        </span>
+                                    </div>
+                                    <div class="tab tab-4">
+                                        <span>Holiday Managements</span>
+                                        <span>
+                                            Take charge of your curriculum using our Subjects Management feature.
+                                            Effortlessly add, update, and organize subjects.
+                                        </span>
+                                    </div>
+                                    <div class="tab tab-5">
+                                        <span>Staff Management</span>
+                                        <span>
+                                            Take charge of your curriculum using our Subjects Management feature.
+                                            Effortlessly add, update, and organize subjects.
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
 
                         <div class="col-lg-6 contentWrapper">
@@ -601,7 +625,7 @@
                             <span class="greenText">Student Management</span>
                             <span>Manage student information,securely and efficiently
                             </span>
-                            <img src="./Images/titleLine.png" alt="">
+
                         </div>
                     </div>
                     <div class="col-12 tabsContainer">
@@ -629,45 +653,49 @@
                                 </div>
                             </div>
 
-                            <div class="col-lg-6 tabsWrapper">
-                                <div class="tabs">
-                                    <div class="tab admissTab tab-1 admissActive">
-                                        <span>Attendance Tracking</span>
-                                        <span>
-                                            Efficiently monitor and manage student attendance with automated tracking.
-                                        </span>
-                                    </div>
-                                    <div class="tab tab-2">
-                                        <span>Assignment Management</span>
-                                        <span>
-                                            Streamline the creation, distribution, and tracking of assignments.
-                                        </span>
-                                    </div>
-                                    <div class="tab tab-3">
-                                        <span>Exam and Assessment Module</span>
-                                        <span>
-                                            Plan, conduct, and analyze exams and assessments digitally.
-                                        </span>
-                                    </div>
-                                    <div class="tab tab-4">
-                                        <span>Timetable and Scheduling</span>
-                                        <span>
-                                            Easily create and manage class schedules and timetables.
-                                        </span>
-                                    </div>
-                                    <div class="tab tab-5">
-                                        <span>Timetable and Scheduling</span>
-                                        <span>
-                                            Easily create and manage class schedules and timetables.
-                                        </span>
-                                    </div>
-                                    <div class="tab tab-6">
-                                        <span>Timetable and Scheduling</span>
-                                        <span>
-                                            Easily create and manage class schedules and timetables.
-                                        </span>
+                            <div class="col-lg-6 tabsMainWrapper">
+                                <div class="tabsWrapper">
+                                    <div class="tabs">
+                                        <div class="tab admissTab tab-1 admissActive">
+                                            <span>Attendance Tracking</span>
+                                            <span>
+                                                Efficiently monitor and manage student attendance with automated
+                                                tracking.
+                                            </span>
+                                        </div>
+                                        <div class="tab tab-2">
+                                            <span>Assignment Management</span>
+                                            <span>
+                                                Streamline the creation, distribution, and tracking of assignments.
+                                            </span>
+                                        </div>
+                                        <div class="tab tab-3">
+                                            <span>Exam and Assessment Module</span>
+                                            <span>
+                                                Plan, conduct, and analyze exams and assessments digitally.
+                                            </span>
+                                        </div>
+                                        <div class="tab tab-4">
+                                            <span>Timetable and Scheduling</span>
+                                            <span>
+                                                Easily create and manage class schedules and timetables.
+                                            </span>
+                                        </div>
+                                        <div class="tab tab-5">
+                                            <span>Timetable and Scheduling</span>
+                                            <span>
+                                                Easily create and manage class schedules and timetables.
+                                            </span>
+                                        </div>
+                                        <div class="tab tab-6">
+                                            <span>Timetable and Scheduling</span>
+                                            <span>
+                                                Easily create and manage class schedules and timetables.
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -694,15 +722,15 @@
 
                     <div class="listWrapper">
                         <span>
-                            <i class="fa-regular fa-circle-check"></i>
+                            <img src="./Images/right.svg" class="rightTickImg" alt="">
                             Affordable price
                         </span>
                         <span>
-                            <i class="fa-regular fa-circle-check"></i>
+                            <img src="./Images/right.svg" class="rightTickImg" alt="">
                             Easy to manage admin panel
                         </span>
                         <span>
-                            <i class="fa-regular fa-circle-check"></i>
+                            <img src="./Images/right.svg" class="rightTickImg" alt="">
                             Data Security
                         </span>
                     </div>
@@ -721,157 +749,168 @@
                     <div class="col-12">
                         <div class="sectionTitle">
                             <span>Flexible Pricing Packages</span>
-                            <img src="./Images/titleLine.png" alt="">
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 pricingBox">
-                        <div class="startUpWrapper">
-                            <div class="textDiv">
-                                <span class="title">Startup</span>
-                                <span>$2.0 Per Student Charges</span>
-                                <span>$2.0 Per Staff Charges</span>
-                                <span class="days">26 Days</span>
-                            </div>
-                            <div class="listWrapper">
-                                <span>
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    Student Management
-                                </span>
-                                <span>
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    Academics Management
-                                </span>
-                                <span>
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    Slider Management
-                                </span>
-                                <span>
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    Teacher Management
-                                </span>
-                                <span>
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    Session Year Management
-                                </span>
-                                <span class="lineThrough">
-                                    <i class="fa-regular fa-circle-xmark"></i>
-                                    Holiday Management
-                                </span>
-                                <span class="lineThrough">
-                                    <i class="fa-regular fa-circle-xmark"></i>
-                                    Timetable Management
-                                </span>
-                                <span class="lineThrough">
-                                    <i class="fa-regular fa-circle-xmark"></i>
-                                    Attendance Management
-                                </span>
-                                <span class="lineThrough">
-                                    <i class="fa-regular fa-circle-xmark"></i>
-                                    Staff Leave Management
-                                </span>
-                            </div>
-                            <button class="pricingBtn">Get Started</button>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 pricingBox premium">
-                        <div class="startUpWrapper">
-                            <div class="textDiv">
-                                <span class="title">Premium</span>
-                                <span>$2.0 Per Student Charges</span>
-                                <span>$2.0 Per Staff Charges</span>
-                                <span class="days">30 Days</span>
-                            </div>
-                            <div class="listWrapper">
-                                <span>
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    Student Management
-                                </span>
-                                <span>
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    Academics Management
-                                </span>
-                                <span>
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    Slider Management
-                                </span>
-                                <span>
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    Teacher Management
-                                </span>
-                                <span>
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    Session Year Management
-                                </span>
-                                <span>
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    Holiday Management
-                                </span>
-                                <span>
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    Timetable Management
-                                </span>
-                                <span>
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    Attendance Management
-                                </span>
-                                <span class="lineThrough">
-                                    <i class="fa-regular fa-circle-xmark"></i>
-                                    Staff Leave Management
-                                </span>
-                            </div>
-                            <button class="pricingBtn">Get Started</button>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 pricingBox optimal">
-                        <div class="startUpWrapper">
-                            <div class="textDiv">
-                                <span class="title">Optimal</span>
-                                <span>$2.0 Per Student Charges</span>
-                                <span>$2.0 Per Staff Charges</span>
-                                <span class="days">30 Days</span>
-                            </div>
-                            <div class="listWrapper">
-                                <span>
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    Student Management
-                                </span>
-                                <span>
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    Academics Management
-                                </span>
-                                <span>
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    Slider Management
-                                </span>
-                                <span>
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    Teacher Management
-                                </span>
-                                <span>
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    Session Year Management
-                                </span>
-                                <span>
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    Holiday Management
-                                </span>
-                                <span>
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    Timetable Management
-                                </span>
-                                <span>
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    Attendance Management
-                                </span>
-                                <span>
-                                    <i class="fa-regular fa-circle-check"></i>
-                                    Staff Leave Management
-                                </span>
-                            </div>
-                            <button class="pricingBtn">Get Started</button>
-                        </div>
-                    </div>
 
+                        </div>
+                    </div>
+                    <div class="col-12 swiperWrapper">
+                        <div class="commonSlider">
+                            <div class="slider-content owl-carousel">
+                                <div class="swiperDataWrapper">
+                                    <div class="pricingBox">
+                                        <div class="startUpWrapper">
+                                            <div class="textDiv">
+                                                <span class="title">Startup</span>
+                                                <span>$2.0 Per Student Charges</span>
+                                                <span>$2.0 Per Staff Charges</span>
+                                                <span class="days">26 Days</span>
+                                            </div>
+                                            <div class="listWrapper">
+                                                <span>
+                                                    <img src="./Images/right.svg" class="rightTickImg" alt="">
+                                                    Student Management
+                                                </span>
+                                                <span>
+                                                    <img src="./Images/right.svg" class="rightTickImg" alt="">
+                                                    Academics Management
+                                                </span>
+                                                <span>
+                                                    <img src="./Images/right.svg" class="rightTickImg" alt="">
+                                                    Slider Management
+                                                </span>
+                                                <span>
+                                                    <img src="./Images/right.svg" class="rightTickImg" alt="">
+                                                    Teacher Management
+                                                </span>
+                                                <span>
+                                                    <img src="./Images/right.svg" class="rightTickImg" alt="">
+                                                    Session Year Management
+                                                </span>
+                                                <span class="lineThrough">
+                                                    <img src="./Images/cross.svg" class="wrongTickImg" alt="">
+                                                    Holiday Management
+                                                </span>
+                                                <span class="lineThrough">
+                                                    <img src="./Images/cross.svg" class="wrongTickImg" alt="">
+                                                    Timetable Management
+                                                </span>
+                                                <span class="lineThrough">
+                                                    <img src="./Images/cross.svg" class="wrongTickImg" alt="">
+                                                    Attendance Management
+                                                </span>
+                                                <span class="lineThrough">
+                                                    <img src="./Images/cross.svg" class="wrongTickImg" alt="">
+                                                    Staff Leave Management
+                                                </span>
+                                            </div>
+                                            <button class="pricingBtn">Get Started</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiperDataWrapper">
+                                    <div class="pricingBox premium">
+                                        <div class="startUpWrapper">
+                                            <div class="textDiv">
+                                                <span class="title">Premium</span>
+                                                <span>$2.0 Per Student Charges</span>
+                                                <span>$2.0 Per Staff Charges</span>
+                                                <span class="days">30 Days</span>
+                                            </div>
+                                            <div class="listWrapper">
+                                                <span>
+                                                    <img src="./Images/right.svg" class="rightTickImg" alt="">
+                                                    Student Management
+                                                </span>
+                                                <span>
+                                                    <img src="./Images/right.svg" class="rightTickImg" alt="">
+                                                    Academics Management
+                                                </span>
+                                                <span>
+                                                    <img src="./Images/right.svg" class="rightTickImg" alt="">
+                                                    Slider Management
+                                                </span>
+                                                <span>
+                                                    <img src="./Images/right.svg" class="rightTickImg" alt="">
+                                                    Teacher Management
+                                                </span>
+                                                <span>
+                                                    <img src="./Images/right.svg" class="rightTickImg" alt="">
+                                                    Session Year Management
+                                                </span>
+                                                <span>
+                                                    <img src="./Images/right.svg" class="rightTickImg" alt="">
+                                                    Holiday Management
+                                                </span>
+                                                <span>
+                                                    <img src="./Images/right.svg" class="rightTickImg" alt="">
+                                                    Timetable Management
+                                                </span>
+                                                <span>
+                                                    <img src="./Images/right.svg" class="rightTickImg" alt="">
+                                                    Attendance Management
+                                                </span>
+                                                <span class="lineThrough">
+                                                    <img src="./Images/cross.svg" class="wrongTickImg" alt="">
+                                                    Staff Leave Management
+                                                </span>
+                                            </div>
+                                            <button class="pricingBtn">Get Started</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiperDataWrapper">
+                                    <div class="pricingBox optimal">
+                                        <div class="startUpWrapper">
+                                            <div class="textDiv">
+                                                <span class="title">Optimal</span>
+                                                <span>$2.0 Per Student Charges</span>
+                                                <span>$2.0 Per Staff Charges</span>
+                                                <span class="days">30 Days</span>
+                                            </div>
+                                            <div class="listWrapper">
+                                                <span>
+                                                    <img src="./Images/right.svg" class="rightTickImg" alt="">
+                                                    Student Management
+                                                </span>
+                                                <span>
+                                                    <img src="./Images/right.svg" class="rightTickImg" alt="">
+                                                    Academics Management
+                                                </span>
+                                                <span>
+                                                    <img src="./Images/right.svg" class="rightTickImg" alt="">
+                                                    Slider Management
+                                                </span>
+                                                <span>
+                                                    <img src="./Images/right.svg" class="rightTickImg" alt="">
+                                                    Teacher Management
+                                                </span>
+                                                <span>
+                                                    <img src="./Images/right.svg" class="rightTickImg" alt="">
+                                                    Session Year Management
+                                                </span>
+                                                <span>
+                                                    <img src="./Images/right.svg" class="rightTickImg" alt="">
+                                                    Holiday Management
+                                                </span>
+                                                <span>
+                                                    <img src="./Images/right.svg" class="rightTickImg" alt="">
+                                                    Timetable Management
+                                                </span>
+                                                <span>
+                                                    <img src="./Images/right.svg" class="rightTickImg" alt="">
+                                                    Attendance Management
+                                                </span>
+                                                <span>
+                                                    <img src="./Images/right.svg" class="rightTickImg" alt="">
+                                                    Staff Leave Management
+                                                </span>
+                                            </div>
+                                            <button class="pricingBtn">Get Started</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -902,7 +941,7 @@
                     <div class="col-12">
                         <div class="sectionTitle">
                             <span>Frequently Asked Questions</span>
-                            <img src="./Images/titleLine.png" alt="">
+
                         </div>
                     </div>
 
@@ -921,7 +960,9 @@
                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <span>
-                                            School apps are typically designed to be compatiable with a range of devices,including smartphones and tablets running iOS or Android operating systems.
+                                            School apps are typically designed to be compatiable with a range of
+                                            devices,including smartphones and tablets running iOS or Android operating
+                                            systems.
                                         </span>
                                     </div>
                                 </div>
@@ -939,7 +980,9 @@
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <span>
-                                            School apps are typically designed to be compatiable with a range of devices,including smartphones and tablets running iOS or Android operating systems.
+                                            School apps are typically designed to be compatiable with a range of
+                                            devices,including smartphones and tablets running iOS or Android operating
+                                            systems.
                                         </span>
                                     </div>
                                 </div>
@@ -958,7 +1001,9 @@
                                     aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <span>
-                                            School apps are typically designed to be compatiable with a range of devices,including smartphones and tablets running iOS or Android operating systems.
+                                            School apps are typically designed to be compatiable with a range of
+                                            devices,including smartphones and tablets running iOS or Android operating
+                                            systems.
                                         </span>
                                     </div>
                                 </div>
@@ -977,7 +1022,9 @@
                                     aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <span>
-                                            School apps are typically designed to be compatiable with a range of devices,including smartphones and tablets running iOS or Android operating systems.
+                                            School apps are typically designed to be compatiable with a range of
+                                            devices,including smartphones and tablets running iOS or Android operating
+                                            systems.
                                         </span>
                                     </div>
                                 </div>
@@ -992,11 +1039,13 @@
                                         </span>
                                     </button>
                                 </h2>
-                                <div id="collapseFive" class="accordion-collapse collapse"
-                                    aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                    data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <span>
-                                            School apps are typically designed to be compatiable with a range of devices,including smartphones and tablets running iOS or Android operating systems.
+                                            School apps are typically designed to be compatiable with a range of
+                                            devices,including smartphones and tablets running iOS or Android operating
+                                            systems.
                                         </span>
                                     </div>
                                 </div>
@@ -1004,18 +1053,19 @@
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingSix">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#collapseSix" aria-expanded="false"
-                                        aria-controls="collapseSix">
+                                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                                         <span>
                                             How can I contact a school directly?
                                         </span>
                                     </button>
                                 </h2>
-                                <div id="collapseSix" class="accordion-collapse collapse"
-                                    aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                    data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <span>
-                                            School apps are typically designed to be compatiable with a range of devices,including smartphones and tablets running iOS or Android operating systems.
+                                            School apps are typically designed to be compatiable with a range of
+                                            devices,including smartphones and tablets running iOS or Android operating
+                                            systems.
                                         </span>
                                     </div>
                                 </div>
@@ -1034,7 +1084,9 @@
                                     aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <span>
-                                            School apps are typically designed to be compatiable with a range of devices,including smartphones and tablets running iOS or Android operating systems.
+                                            School apps are typically designed to be compatiable with a range of
+                                            devices,including smartphones and tablets running iOS or Android operating
+                                            systems.
                                         </span>
                                     </div>
                                 </div>
@@ -1053,7 +1105,9 @@
                                     aria-labelledby="headingEight" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <span>
-                                            School apps are typically designed to be compatiable with a range of devices,including smartphones and tablets running iOS or Android operating systems.
+                                            School apps are typically designed to be compatiable with a range of
+                                            devices,including smartphones and tablets running iOS or Android operating
+                                            systems.
                                         </span>
                                     </div>
                                 </div>
@@ -1074,7 +1128,7 @@
                             <span class="greenText">Let's Get in Touch</span>
                             <span>Have a question or just want to say hi? We'd love to hear from you.
                             </span>
-                            <img src="./Images/titleLine.png" alt="">
+
                         </div>
                         <div class="col-12">
                             <div class="row wrapper">
@@ -1094,7 +1148,7 @@
                                             <button class="commonBtn">Send</button>
                                         </div>
                                         <div>
-                                            <img src="./Images/GetInTouchDots.png" class="sideImg dots" alt="">
+                                            <img src="./Images/getInTouchDots.svg" class="sideImg dots" alt="">
                                         </div>
                                     </div>
                                 </div>
@@ -1128,7 +1182,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <img src="./Images/lineCircle.png" class="lineCircle sideImg" alt="">
+                                        <img src="./Images/lineCircle.svg" class="lineCircle sideImg" alt="">
                                     </div>
                                 </div>
                             </div>
@@ -1142,7 +1196,7 @@
         <section class="ourApp container commonMT">
             <div class="row">
                 <div class="col-lg-6">
-                    <img src="./Images/ourApp.png" class="ourAppImg" alt="">
+                    <img src="./Images/ourApp.svg" class="ourAppImg" alt="">
                 </div>
                 <div class="col-lg-6 content">
                     <div class="text">
@@ -1163,11 +1217,11 @@
                     <div class="storeImgs">
                         <a href="https://wrteam.in/product-details/eschool-saas-school-management-system-with-student-parents-teacher-flutter-app-laravel-admin"
                             target="_blank">
-                            <img src="./Images/Google play.png" alt="">
+                            <img src="./Images/Google play.svg" alt="">
                         </a>
                         <a href="https://wrteam.in/product-details/eschool-saas-school-management-system-with-student-parents-teacher-flutter-app-laravel-admin"
                             target="_blank">
-                            <img src="./Images/iOS app Store.png" alt="">
+                            <img src="./Images/iOS app Store.svg" alt="">
                         </a>
                     </div>
                 </div>
@@ -1182,7 +1236,7 @@
                     <div class="companyInfoWrapper">
                         <div>
                             <a href="index.html">
-                                <img src="./Images/Logo.png" class="logo" alt="">
+                                <img src="./Images/Logo.svg" class="logo" alt="">
                             </a>
                         </div>
                         <div>
@@ -1228,7 +1282,8 @@
                         <span class="iconsWrapper">
                             <a href="https://www.facebook.com/wrteam.in" target="_blank">
                                 <span>
-                                    <i class="fa-brands fa-square-facebook"></i>
+                                    <!-- <i class="fa-brands fa-square-facebook"></i> -->
+                                    <img src="./Images/facebook.svg" alt="">
                                 </span>
                                 <span>
                                     Facebook
@@ -1238,7 +1293,8 @@
                         <span class="iconsWrapper">
                             <a href="https://twitter.com/wrteamin" target="_blank">
                                 <span>
-                                    <i class="fa-brands fa-square-twitter"></i>
+                                    <!-- <i class="fa-brands fa-square-twitter"></i> -->
+                                    <img src="./Images/twitter.svg" alt="">
                                 </span>
                                 <span>
                                     Twitter
@@ -1248,7 +1304,8 @@
                         <span class="iconsWrapper">
                             <a href="https://www.instagram.com/wrteam.in" target="_blank">
                                 <span>
-                                    <i class="fa-brands fa-square-instagram"></i>
+                                    <!-- <i class="fa-brands fa-square-instagram"></i> -->
+                                    <img src="./Images/instagram.svg" alt="">
                                 </span>
                                 <span>
                                     Instagram
@@ -1267,51 +1324,14 @@
             </div>
         </div>
     </footer>
+    <!-- footer ends here  -->
 
+    <!-- swiper script  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            // Initialize each carousel separately
-            $(".slider-content.owl-carousel").each(function () {
-                var owl = $(this).owlCarousel({
-                    loop: true,
-                    autoplay: true,
-                    autoplayTimeout: 1500,
-                    autoplaySpeed: 2000,
-                    margin: 30,
-                    nav: false,
-                    responsive: {
-                        0: {
-                            items: 1,
-                        },
-                        600: {
-                            items: 3,
-                        },
-                        1000: {
-                            items: 5,
-                        },
-                    },
-                });
 
-                // Custom navigation buttons for this specific carousel
-                $(this)
-                    .closest(".commonSlider")
-                    .find(".prev")
-                    .click(function () {
-                        owl.trigger("prev.owl.carousel");
-                    });
 
-                $(this)
-                    .closest(".commonSlider")
-                    .find(".next")
-                    .click(function () {
-                        owl.trigger("next.owl.carousel");
-                    });
-            });
-        });
-    </script>
-
+    <!-- custom script  -->
     <script src="script.js">
 
     </script>

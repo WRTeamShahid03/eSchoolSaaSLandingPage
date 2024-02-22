@@ -8,6 +8,7 @@
 :root {
     --primary-color: #56CC99;
     --primary-hover-color: #143449;
+    --secondary-color: #215679;
     --secondary-color1: #38A3A5;
     --secondary-color2: #57CC99;
     --secondary-color3: #80ED99;
@@ -29,6 +30,9 @@ a {
 
 .navbar {
     background-color: #F4FBFF;
+    position: sticky !important;
+    top: 0px;
+    z-index: 12;
 }
 
 .navbar .navbarWrapper {
@@ -247,7 +251,7 @@ a {
 .commonTitle {
     font-size: 35px;
     font-weight: 700;
-    color: #215679;
+    color: var(--secondary-color);
 }
 
 @media screen and (max-width: 1199px) {
@@ -417,6 +421,29 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.sectionTitle::before {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: var(--primary-color);
+    z-index: 1;
+}
+
+.sectionTitle::after {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    width: 50%;
+    height: 4px;
+    background-color: var(--secondary-color);
+    border-radius: 6px;
 }
 
 .sectionTitle span {
@@ -425,6 +452,12 @@ a {
     font-weight: 700;
     text-align: center;
     width: 60%;
+}
+
+@media screen and (max-width: 991px) {
+    .sectionTitle span {
+        width: 100%;
+    }
 }
 
 .sectionTitle img {
@@ -460,15 +493,22 @@ a {
 }
 
 .features .card img {
-    width: 60px;
+    width: 40px;
 }
 
 .features .card span {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 700;
     color: #000000;
 }
 
+.features .cardWrapper .commonBtn {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .sectionTitle img {
@@ -500,14 +540,6 @@ a {
     .features .cardWrapper {
         margin-top: 30px;
     }
-
-    .features .card span {
-        font-size: 20px;
-    }
-
-    .features .card img {
-        width: 50px;
-    }
 }
 
 /* features ends here  */
@@ -516,7 +548,7 @@ a {
     border: none;
 }
 
-.swiperSect .card img{
+.swiperSect .card img {
     width: 100%;
     height: 100px;
     object-fit: contain;
@@ -551,11 +583,21 @@ a {
     justify-content: center;
 }
 
-.counterSect .card .numb {
+.counterSect .card div:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.counterSect .card div:first-child span {
     color: #000000;
     font-size: 50px;
     font-weight: 700;
+    animation-duration: 1s;
+    animation-delay: 0s;
 }
+
 
 .counterSect .card .text {
     color: #00000080;
@@ -564,7 +606,7 @@ a {
 }
 
 @media screen and (max-width: 575px) {
-    .counterSect .card .numb {
+    .counterSect .card div:first-child span {
         font-size: 30px;
     }
 
@@ -589,6 +631,26 @@ a {
 
 .tabsWrapper {
     position: relative;
+    max-height: 65vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* width */
+
+.tabsWrapper::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+.tabsWrapper::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* Handle */
+.tabsWrapper::-webkit-scrollbar-thumb {
+    background: var(--secondary-color1);
+    border-radius: 10px;
 }
 
 .tabsWrapper::after {
@@ -608,6 +670,7 @@ a {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    padding-right: 30px;
 }
 
 .tab {
@@ -662,7 +725,7 @@ a {
     position: absolute;
     top: 0px;
     left: auto;
-    right: -26px;
+    right: -14px;
     width: 4px;
     height: 100%;
     background-color: var(--primary-color);
@@ -814,32 +877,63 @@ a {
     padding: 40px 0px;
 }
 
+.pricing .sectionTitle {
+    margin-bottom: 30px;
+}
+
 .pricing .commonMT {
     margin-top: -35px;
 }
 
 .pricing .row {
     margin-top: 50px;
-    color: #215679;
+    color: var(--secondary-color);
 }
 
 .pricing .pricingBox {
     margin-top: 12px;
-    border: 6px solid #215679;
+    margin-bottom: 50px;
+    border: 6px solid var(--secondary-color);
     border-radius: 15px;
     padding: 30px;
     position: relative;
     padding-bottom: 70px;
     transition: all 0.5s;
+    width: 98%;
+}
+
+.pricing .owl-dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.pricing .owl-carousel button.owl-dot {
+    background: 0 0;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit;
+    width: 20px;
+    height: 20px;
+    background: #2C5F8080;
+    border-radius: 16px;
+}
+
+.pricing .owl-carousel button.owl-dot.active {
+    background: var(--secondary-color);
+    width: 50px;
+}
+
+.pricing .swiperWrapper {
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 @media screen and (min-width: 1400px) {
     .pricing .row {
         gap: 18px;
-    }
-
-    .pricing .pricingBox {
-        width: 32.333333%;
     }
 }
 
@@ -847,32 +941,17 @@ a {
     .pricing .row {
         gap: 18px;
     }
-
-    .pricing .pricingBox {
-        width: 31.333333%;
-    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .pricing .row {
         gap: 60px 24px;
     }
-
-    .pricing .pricingBox {
-        width: 48.333333%;
-    }
 }
 
 @media screen and (max-width: 767px) {
     .pricing .row {
         gap: 50px;
-    }
-}
-
-@media screen and (max-width: 575px) {
-    .pricing .pricingBox {
-        width: 90%;
-        margin: auto;
     }
 }
 
@@ -903,17 +982,54 @@ a {
 .pricing .listWrapper {
     margin-top: 30px;
     gap: 20px;
+    max-height: 660px;
+    overflow-y: scroll;
+    padding-right: 24px;
+}
+
+/* width */
+.pricing .listWrapper::-webkit-scrollbar {
+    width: 6px;
+}
+
+/* Track */
+.pricing .listWrapper::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* Handle */
+.pricing .listWrapper::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 10px;
+}
+
+.rightTickImg {
+    width: 30px !important;
+    display: inline-block !important;
+}
+
+.wrongTickImg {
+    width: 22px !important;
+    display: inline-block !important;
+}
+
+.rightTickImg ,.wrongTickImg{
+    margin-right: 12px;
 }
 
 .pricing .listWrapper span {
     font-size: 16px;
-    color: #215679;
+    color: var(--secondary-color);
     font-size: 18px;
     font-weight: 400;
-    border-top: 1px solid lightgray;
     border-bottom: 1px solid lightgray;
     padding: 12px 0px;
 }
+
+.pricing .premium .listWrapper span {
+    border-bottom: 1px solid #6c757d54;
+}
+
 
 .pricing .lineThrough {
     text-decoration: line-through;
@@ -926,11 +1042,11 @@ a {
 
 .pricing .pricingBtn {
     background-color: #fff;
-    color: #215679;
+    color: var(--secondary-color);
     width: 100%;
     height: 48px;
     border-radius: 50px;
-    border: 2px solid #215679;
+    border: 2px solid var(--secondary-color);
     position: relative;
     bottom: -96px;
     margin: auto;
@@ -938,7 +1054,7 @@ a {
 }
 
 .pricing .pricingBox:hover .pricingBtn {
-    background-color: #215679;
+    background-color: var(--secondary-color);
     color: white;
     border: none;
 }
@@ -964,9 +1080,14 @@ a {
 }
 
 @media screen and (max-width: 575px) {
+    .pricing .swiperWrapper {
+        padding-right: 0px;
+        padding-left: 14px;
+    }
 
     .pricing .pricingBox {
-        padding: 20px;
+        padding: 12px;
+        width: 94%;
     }
 
     .pricing .textDiv .title {
@@ -984,11 +1105,21 @@ a {
     .pricing .premium .pricingBtn {
         bottom: -36px;
     }
-}
 
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-    .pricing .premium .pricingBtn {
-        bottom: -156px;
+    .pricing .listWrapper span {
+        font-size: 16px;
+    }
+
+    .rightTickImg {
+        width: 24px !important;
+    }
+    
+    .wrongTickImg {
+        width: 18px !important;
+    }
+    
+    .rightTickImg ,.wrongTickImg{
+        margin-right: 8px;
     }
 }
 
@@ -1032,7 +1163,7 @@ a {
 }
 
 .customPack .commonBtn {
-    background-color: #215679;
+    background-color: var(--secondary-color);
     border: 2px solid white;
     width: 220px;
     height: 60px;
@@ -1041,7 +1172,7 @@ a {
 
 .customPack .commonBtn:hover {
     background-color: #fff;
-    color: #215679;
+    color: var(--secondary-color);
 }
 
 @media screen and (max-width: 575px) {
@@ -1068,7 +1199,6 @@ a {
 }
 
 /* customPack ends here  */
-
 
 .faqs .accordion {
     margin-top: 40px;
@@ -1124,7 +1254,7 @@ a {
 }
 
 .faqs .accordion-button::after {
-    background-image: url("./Images/bx-plus-circle.png") !important;
+    background-image: url("./Images/bx-plus-circle.svg") !important;
 }
 
 .faqs .accordion-button:not(.collapsed)::after {
@@ -1164,7 +1294,7 @@ a {
 }
 
 .getInTouch .wrapper {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 .getInTouch .card {
@@ -1191,7 +1321,7 @@ a {
 }
 
 .getInTouch .commonBtn {
-    background-color: #215679;
+    background-color: var(--secondary-color);
     color: #fff;
     width: 100%;
     border-radius: 4px;
@@ -1221,7 +1351,7 @@ a {
     line-height: 60px;
     width: 60px;
     text-align: center;
-    background-color: #215679;
+    background-color: var(--secondary-color);
     color: #fff;
     font-size: 26px;
     border-radius: 50px;
@@ -1314,7 +1444,7 @@ a {
     width: 100%;
 }
 
-.ourApp .content{
+.ourApp .content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1340,36 +1470,38 @@ a {
     font-weight: 700;
 }
 
-.ourApp .storeImgs{
+.ourApp .storeImgs {
     display: flex;
     align-items: center;
     justify-content: start;
     gap: 6px;
 }
 
-.ourApp .storeImgs img{
+.ourApp .storeImgs img {
     width: 212px;
 }
 
-@media screen and (max-width: 991px){
-    .ourApp .row{
+@media screen and (max-width: 991px) {
+    .ourApp .row {
         flex-direction: column-reverse;
         gap: 50px 0px;
     }
 
-    .ourApp .content{
+    .ourApp .content {
         gap: 40px;
     }
 }
 
-@media screen and (max-width: 575px){
-    .ourApp .content{
+@media screen and (max-width: 575px) {
+    .ourApp .content {
         gap: 20px;
     }
+
     .ourApp .text .title {
         font-size: 26px;
     }
-    .ourApp .storeImgs img{
+
+    .ourApp .storeImgs img {
         width: 150px;
     }
 }
@@ -1457,10 +1589,9 @@ footer .iconsWrapper {
     gap: 10px;
 }
 
-footer .linksWrapper i {
-    color: #000;
+footer .iconsWrapper img {
+    width: 22px;
     margin-right: 12px;
-    font-size: 20px;
 }
 
 footer hr {
