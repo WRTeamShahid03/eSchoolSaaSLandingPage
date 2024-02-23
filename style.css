@@ -7,14 +7,11 @@
 
 :root {
     --primary-color: #56CC99;
-    --primary-hover-color: #143449;
     --secondary-color: #215679;
     --secondary-color1: #38A3A5;
-    --secondary-color2: #38A3A51F;
     --primary-background-color: #F2F5F7;
     --text--secondary-color: #5C788C;
 }
-
 
 body {
     font-family: 'Lato' !important;
@@ -236,14 +233,6 @@ a {
     gap: 16px;
     text-align: start;
     padding-top: 120px;
-}
-
-.commonTag {
-    background-color: var(--secondary-color2);
-    color: var(--secondary-color1);
-    padding: 8px;
-    border-radius: 4px;
-    width: max-content;
 }
 
 .commonTitle {
@@ -706,7 +695,7 @@ a {
 }
 
 .active span {
-    color: #215679 !important;
+    color: var(--secondary-color) !important;
 }
 
 .tab:hover {
@@ -796,7 +785,7 @@ a {
     top: 0px;
     width: 4px;
     height: 100%;
-    background-color: var(--primary-hover-color);
+    background-color: var(--secondary-color);
 }
 
 .whyBest .whyBestTextWrapper p {
@@ -1011,7 +1000,8 @@ a {
     display: inline-block !important;
 }
 
-.rightTickImg ,.wrongTickImg{
+.rightTickImg,
+.wrongTickImg {
     margin-right: 12px;
 }
 
@@ -1111,12 +1101,13 @@ a {
     .rightTickImg {
         width: 24px !important;
     }
-    
+
     .wrongTickImg {
         width: 18px !important;
     }
-    
-    .rightTickImg ,.wrongTickImg{
+
+    .rightTickImg,
+    .wrongTickImg {
         margin-right: 8px;
     }
 }
@@ -1131,7 +1122,7 @@ a {
 
 .customPack .row {
     opacity: .9;
-    background-color: #215679F2;
+    background-color: var(--secondary-color);
     justify-content: space-between;
     align-items: center;
     padding: 30px;
@@ -1531,20 +1522,6 @@ footer .row {
 footer .commonDesc {
     color: #000;
     font-size: 16px;
-}
-
-footer .socialIcons span {
-    background-color: var(--secondary-color2);
-    color: var(--secondary-color1) !important;
-    padding: 4px 12px;
-    border-radius: 4px;
-    font-size: 28px;
-    margin: 0px 6px;
-    cursor: pointer;
-}
-
-footer .socialIcons span i {
-    color: var(--secondary-color1) !important;
 }
 
 footer .linksWrapper {
