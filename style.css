@@ -10,13 +10,11 @@
     --primary-hover-color: #143449;
     --secondary-color: #215679;
     --secondary-color1: #38A3A5;
-    --secondary-color2: #57CC99;
-    --secondary-color3: #80ED99;
-    --text--primary-color: #38A3A51F;
-    --text--secondary-color: #5C788C;
-    --text-white-color: #fff;
+    --secondary-color2: #38A3A51F;
     --primary-background-color: #F2F5F7;
+    --text--secondary-color: #5C788C;
 }
+
 
 body {
     font-family: 'Lato' !important;
@@ -241,7 +239,7 @@ a {
 }
 
 .commonTag {
-    background-color: #38A3A51F;
+    background-color: var(--secondary-color2);
     color: var(--secondary-color1);
     padding: 8px;
     border-radius: 4px;
@@ -1536,7 +1534,7 @@ footer .commonDesc {
 }
 
 footer .socialIcons span {
-    background-color: #38A3A51F;
+    background-color: var(--secondary-color2);
     color: var(--secondary-color1) !important;
     padding: 4px 12px;
     border-radius: 4px;
