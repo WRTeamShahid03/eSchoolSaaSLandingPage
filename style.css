@@ -1577,3 +1577,167 @@ footer .copyright {
     text-align: center;
     color: var(--text--secondary-color);
 }
+
+/* footer ends here  */
+
+
+/* <=======================================================> */
+
+/* login form css */
+
+.formModal .modal-content {
+    background: url('./Images/form-bg.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    padding: 12px;
+    padding-right: 26px;
+    align-items: center;
+    justify-content: end;
+}
+
+.formModal .modal-title {
+    color: #000000;
+    font-size: 30px !important;
+    font-weight: 700;
+}
+
+.formModal .rightSide {
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.formModal .rightSide .headingWrapper span {
+    color: #000000;
+    font-size: 22px;
+    font-weight: 700;
+    position: relative;
+}
+
+.formModal .rightSide .headingWrapper span::before {
+    content: '';
+    position: absolute;
+    bottom: -9px;
+    background-color: var(--secondary-color);
+    width: 6px;
+    height: 6px;
+    border-radius: 50px;
+    left: 70px;
+    right: auto;
+    z-index: 1;
+}
+
+.formModal .rightSide .headingWrapper span::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.formModal .rightSide .formWrapper {
+    margin-top: 20px;
+}
+
+.formModal .rightSide .formWrapper .row {
+    gap: 12px 0px;
+}
+
+.formModal .rightSide .formWrapper .inputWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 6px;
+}
+
+.formModal .rightSide .formWrapper .inputWrapper label {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.formModal .rightSide .formWrapper .inputWrapper input {
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    padding: 8px;
+    width: 100%;
+}
+
+.formModal .rightSide .formWrapper .inputWrapper input::-webkit-outer-spin-button,
+.formModal .rightSide .formWrapper .inputWrapper input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.formModal .rightSide .formWrapper .inputWrapper input::placeholder {
+    color: rgba(128, 128, 128, 0.838);
+}
+
+.formModal .rightSide .formWrapper .inputWrapper input:focus {
+    outline: none;
+}
+
+.formModal .adminFormWrapper {
+    margin-top: 20px;
+}
+
+.formModal .modalfooter {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.formModal .adminFormWrapper .headingWrapper span::before {
+    left: 50px;
+}
+
+.formModal .modalfooter .inputWrapper div {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 12px;
+}
+
+.formModal .modalfooter .commonBtn {
+    padding: 8px 40px;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 991px) {
+    .formModal .modal-content {
+        padding: 0px;
+        background: transparent;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .formModal .modal-content {
+        padding: 0px;
+        padding-left: 22px;
+    }
+
+    .formModal .rightSide {
+        padding: 0px;
+    }
+
+    .formModal .modal-title {
+        font-size: 22px !important;
+    }
+
+    .formModal .rightSide .headingWrapper span {
+        font-size: 18px;
+    }
+
+    .formModal .rightSide .headingWrapper span::before {
+        left: 58px;
+    }
+
+    .formModal .adminFormWrapper .headingWrapper span::before {
+        left: 40px;
+    }
+}
