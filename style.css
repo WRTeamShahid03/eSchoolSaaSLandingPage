@@ -1586,14 +1586,8 @@ footer .copyright {
 /* login form css */
 
 .formModal .modal-content {
-    background: url('./Images/form-bg.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    flex-direction: row;
-    padding: 12px;
-    padding-right: 26px;
-    align-items: center;
-    justify-content: end;
+    background: transparent;
+    border: none;
 }
 
 .formModal .modal-title {
