@@ -147,10 +147,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // for swiperSection
 $(document).ready(function () {
+    let rtlDir;
+    if ($('html').attr('dir') === 'rtl') {
+        rtlDir = true
+    }
+    else {
+        rtlDir = false;
+    }
     // Initialize each carousel separately
     $(".swiperSect .slider-content.owl-carousel").each(function () {
         var owl = $(this).owlCarousel({
             loop: true,
+            rtl: rtlDir,
             autoplay: true,
             autoplayTimeout: 1500,
             autoplaySpeed: 2000,
@@ -188,10 +196,18 @@ $(document).ready(function () {
 
 // for pricingSection
 $(document).ready(function () {
+    let rtlDir;
+    if ($('html').attr('dir') === 'rtl') {
+        rtlDir = true
+    }
+    else {
+        rtlDir = false;
+    }
     // Initialize each carousel separately
     $(".pricing .slider-content.owl-carousel").each(function () {
         var owl = $(this).owlCarousel({
             loop: false,
+            rtl: rtlDir,
             autoplay: false,
             autoplayTimeout: 1000,
             autoplaySpeed: 2000,
